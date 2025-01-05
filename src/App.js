@@ -67,31 +67,66 @@ const tags = [
 function App() {
   return (
     <div className="App">
-      <div className="profile-card">
-        <div className="profile-card__img">
-          <img src="user.jpeg" alt="John Doe" />
-        </div>
-        <div className="profile-card__content">
-          <h1 className="profile-card__name">{fullName}</h1>
-          <h2 className="profile-card__occupation">{occupation}</h2>
-          <p className="profile-card__bio">{bio}</p>
-          <div className="profile-card__tags">
-            {tags.map((tag) => (
-              <span
-                key={tag.id}
-                className="profile-card__tag"
-                style={{
-                  color: tag.color,
-                  backgroundColor: tag.background,
-                }}
-              >
-                {tag.name} {tag.emoji}
-              </span>
-            ))}{" "}
-          </div>
-        </div>
-      </div>
+      <ProfileCard />
     </div>
+  );
+}
+
+function ProfileCard() {
+  return (
+    <div className="profile-card">
+      <ProfileImage />
+      <ProfileCardContent />
+    </div>
+  );
+}
+
+function ProfileImage() {
+  return (
+    <div className="profile-card__img">
+      <img src="user.jpeg" alt="John Doe" />
+    </div>
+  );
+}
+
+function ProfileCardContent() {
+  return (
+    <div className="profile-card__content">
+      <h1 className="profile-card__name">{fullName}</h1>
+      <h2 className="profile-card__occupation">{occupation}</h2>
+      <p className="profile-card__bio">{bio}</p>
+      <Tags />
+    </div>
+  );
+}
+
+function Tags() {
+  return (
+    <div className="profile-card__tags">
+      {tags.map((tag) => (
+        <Tag
+          key={tag.id}
+          name={tag.name}
+          emoji={tag.emoji}
+          color={tag.color}
+          background={tag.background}
+        />
+      ))}
+    </div>
+  );
+}
+
+function Tag(props) {
+  return (
+    <span
+      className="profile-card__tag"
+      style={{
+        color: props.color,
+        backgroundColor: props.background,
+      }}
+    >
+      {props.name} {props.emoji}
+    </span>
   );
 }
 
