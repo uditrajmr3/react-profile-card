@@ -1,0 +1,68 @@
+const tags = [
+  {
+    id: 1,
+    name: "Artificial Intelligence",
+    emoji: "❤️",
+    level: "Intermediate",
+    color: "#0078d4",
+    background: "#e0f4ff",
+  },
+  {
+    id: 2,
+    name: "Machine Learning",
+    emoji: "💕",
+    level: "Advanced",
+    color: "#d4006e",
+    background: "#ffe0e6",
+  },
+  {
+    id: 3,
+    name: "Nanotech",
+    emoji: "😍",
+    level: "Beginner",
+    color: "#107c10",
+    background: "#e3f1e5",
+  },
+  {
+    id: 4,
+    name: "Holograms",
+    emoji: "🎶",
+    level: "Beginner",
+    color: "#d47b00",
+    background: "#fff4e0",
+  },
+  {
+    id: 5,
+    name: "Flutter",
+    emoji: "🪭",
+    level: "Advanced",
+    color: "#5d2d91",
+    background: "#e5eaff",
+  },
+  {
+    id: 6,
+    name: "Android",
+    emoji: "🥹",
+    level: "Intermediate",
+    color: "#b4009e",
+    background: "#ffe0f0",
+  },
+  {
+    id: 7,
+    name: "Space Mechanics",
+    emoji: "✨",
+    level: "Beginner",
+    color: "#0063b1",
+    background: "#e0f0ff",
+  },
+  {
+    id: 8,
+    name: "Biomechanics",
+    emoji: "💊",
+    level: "Beginner",
+    color: "#4a0062",
+    background: "#e8e0ff",
+  },
+];
+
+export default tags;

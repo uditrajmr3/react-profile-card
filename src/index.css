@@ -82,3 +82,49 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
+.profile-card__switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 10px;
+}
+
+.switch-label {
+  white-space: nowrap;
+}
+
+/* Dark mode styles */
+.dark-mode.App {
+  background-color: #1a1a1a;
+}
+
+.dark-mode.profile-card {
+  background: #2d2d2d;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .profile-card__name {
+  color: #ffffff;
+}
+
+.dark-mode .profile-card__occupation {
+  color: #cccccc;
+}
+
+.dark-mode .profile-card__bio {
+  color: #b0b0b0;
+}
+
+.dark-mode .switch-label {
+  color: #ffffff;
+}
+
+/* New container for switches */
+.profile-card__switches {
+  padding: 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
