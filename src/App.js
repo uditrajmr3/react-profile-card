@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <div className="profile-card">
         <div className="profile-card__img">
-          <img src="user.jpg" alt="John Doe" />
+          <img src="user-2.jpeg" alt="John Doe" />
         </div>
         <div className="profile-card__content">
           <h1 className="profile-card__name">Udit Raj</h1>
