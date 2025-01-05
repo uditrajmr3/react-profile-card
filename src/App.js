@@ -1,4 +1,4 @@
-import "./App.css";
+import "./index.css";
 
 const fullName = "Udit Raj";
 const occupation = "CTO @ Commerciax Infotech Pvt. Ltd.";
@@ -10,6 +10,7 @@ const tags = [
     id: 1,
     name: "Artificial Intelligence",
     emoji: "❤️",
+    level: "Intermediate",
     color: "#0078d4",
     background: "#e0f4ff",
   },
@@ -17,6 +18,7 @@ const tags = [
     id: 2,
     name: "Machine Learning",
     emoji: "💕",
+    level: "Advanced",
     color: "#d4006e",
     background: "#ffe0e6",
   },
@@ -24,6 +26,7 @@ const tags = [
     id: 3,
     name: "Nanotech",
     emoji: "😍",
+    level: "Beginner",
     color: "#107c10",
     background: "#e3f1e5",
   },
@@ -31,6 +34,7 @@ const tags = [
     id: 4,
     name: "Holograms",
     emoji: "🎶",
+    level: "Beginner",
     color: "#d47b00",
     background: "#fff4e0",
   },
@@ -38,13 +42,15 @@ const tags = [
     id: 5,
     name: "Flutter",
     emoji: "🪭",
-    color: "#5c2d91",
-    background: "#e5e0ff",
+    level: "Advanced",
+    color: "#5d2d91",
+    background: "#e5eaff",
   },
   {
     id: 6,
     name: "Android",
     emoji: "🥹",
+    level: "Intermediate",
     color: "#b4009e",
     background: "#ffe0f0",
   },
@@ -52,6 +58,7 @@ const tags = [
     id: 7,
     name: "Space Mechanics",
     emoji: "✨",
+    level: "Beginner",
     color: "#0063b1",
     background: "#e0f0ff",
   },
@@ -59,7 +66,8 @@ const tags = [
     id: 8,
     name: "Biomechanics",
     emoji: "💊",
-    color: "#4b0082",
+    level: "Beginner",
+    color: "#4a0062",
     background: "#e8e0ff",
   },
 ];
@@ -100,34 +108,32 @@ function ProfileCardContent() {
   );
 }
 
-function Tags() {
+function Tags({ showLevel = true }) {
   return (
     <div className="profile-card__tags">
       {tags.map((tag) => (
-        <Tag
-          key={tag.id}
-          name={tag.name}
-          emoji={tag.emoji}
-          color={tag.color}
-          background={tag.background}
-        />
+        <Tag key={tag.id} tag={tag} showLevel={showLevel} />
       ))}
     </div>
   );
 }
 
-function Tag(props) {
+function Tag({ tag, showLevel }) {
   return (
     <span
       className="profile-card__tag"
       style={{
-        color: props.color,
-        backgroundColor: props.background,
+        color: tag.color,
+        backgroundColor: tag.background,
       }}
     >
-      {props.name} {props.emoji}
+      {tag.name} {showLevel ? getLevelEmoji(tag.level) : tag.emoji}
     </span>
   );
+}
+
+function getLevelEmoji(level) {
+  return level === "Beginner" ? "👶🏽" : level === "Intermediate" ? "👍🏽" : "💪🏽";
 }
 
 export default App;
