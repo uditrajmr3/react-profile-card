@@ -24,39 +24,6 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.profile-card__tag:nth-child(1) {
-  background: #e0f4ff;
-  color: #0078d4;
-}
-.profile-card__tag:nth-child(2) {
-  background: #ffe0e6;
-  color: #d4006e;
-}
-.profile-card__tag:nth-child(3) {
-  background: #e3f1e5;
-  color: #107c10;
-}
-.profile-card__tag:nth-child(4) {
-  background: #fff4e0;
-  color: #d47b00;
-}
-.profile-card__tag:nth-child(5) {
-  background: #e5e0ff;
-  color: #5c2d91;
-}
-.profile-card__tag:nth-child(6) {
-  background: #ffe0f0;
-  color: #b4009e;
-}
-.profile-card__tag:nth-child(7) {
-  background: #e0f0ff;
-  color: #0063b1;
-}
-.profile-card__tag:nth-child(8) {
-  background: #e8e0ff;
-  color: #4b0082;
-}
-
 .profile-card__tag:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
