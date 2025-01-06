@@ -63,6 +63,46 @@ const tags = [
     color: "#4a0062",
     background: "#e8e0ff",
   },
+  {
+    id: 9,
+    name: "React",
+    emoji: "⚛️",
+    level: "Beginner",
+    color: "#d42a2a",
+    background: "#ffe0e0",
+  },
+  {
+    id: 10,
+    name: "Docker",
+    emoji: "💄",
+    level: "Beginner",
+    color: "#ff6b00",
+    background: "#fff1e6",
+  },
+  {
+    id: 11,
+    name: "Kubernetes",
+    emoji: "🌱",
+    level: "Beginner",
+    color: "#2d9d78",
+    background: "#e0f5f0",
+  },
+  {
+    id: 12,
+    name: "Deep Learning",
+    emoji: "🧠",
+    level: "Intermediate",
+    color: "#8046a8",
+    background: "#f5e6ff",
+  },
+  {
+    id: 13,
+    name: "Microservices",
+    emoji: "🤩",
+    level: "Intermediate",
+    color: "#d4b100",
+    background: "#fff9e0",
+  },
 ];
 
 export default tags;
