@@ -90,7 +90,13 @@
   gap: 0.5rem;
   margin-bottom: 10px;
 }
+.dark-mode .profile-card__tag {
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
 
+.dark-mode .profile-card__tag:hover {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+}
 .switch-label {
   white-space: nowrap;
 }
